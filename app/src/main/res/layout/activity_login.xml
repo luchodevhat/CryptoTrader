@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
-                                                   android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_startbackground">
 
     <TextView
             android:id="@+id/textView"
@@ -31,7 +32,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/ic_coin"/>
+            android:src="@drawable/ic_coin"
+             />
 
     <EditText
             android:id="@+id/username"
@@ -64,7 +66,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.842"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username"/>
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            android:background="@color/buttonColor"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
