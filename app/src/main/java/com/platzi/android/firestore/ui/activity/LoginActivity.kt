@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
 
 
     private val TAG = "LoginActivity"
-    private val auth:FirebaseAuth = FirebaseAuth.getInstance()
+    private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,20 +27,18 @@ class LoginActivity : AppCompatActivity() {
 
     fun onStartClicked(view: View) {
         auth.signInAnonymously()
-            .addOnCompleteListener() { task ->
-                if (task.isSuccessful) {
-                    val userName = username.text.toString()
-                    startMainActivity(userName)
-                }else {
-                    showErrorMessage(view)
+                .addOnCompleteListener() { task ->
+                    if (task.isSuccessful) {
+                        val userName = username.text.toString()
+                        startMainActivity(userName)
+                    }
                 }
-                }
-            }
+    }
 
 
     private fun showErrorMessage(view: View) {
         Snackbar.make(view, getString(R.string.error_while_connecting_to_the_server), Snackbar.LENGTH_LONG)
-            .setAction("Info", null).show()
+                .setAction("Info", null).show()
     }
 
     private fun startMainActivity(username: String) {
