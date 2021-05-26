@@ -6,8 +6,8 @@
     <color name="black">#393B3C</color>
     <color name="grey">#F1F3F4</color>
 
-    <color name="startColor"></color>
-    <color name="endColor"></color>
+    <color name="startColor">#F2EEB3</color>
+    <color name="endColor">#FEA443</color>
     <color name="buttonColor">#F2D64B</color>
 
 </resources>

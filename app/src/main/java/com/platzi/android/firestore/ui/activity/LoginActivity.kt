@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.platzi.android.firestore.R
+import com.platzi.android.firestore.model.User
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -26,13 +27,24 @@ class LoginActivity : AppCompatActivity() {
 
 
     fun onStartClicked(view: View) {
+        view.isEnabled = false
         auth.signInAnonymously()
                 .addOnCompleteListener() { task ->
                     if (task.isSuccessful) {
                         val userName = username.text.toString()
-                        startMainActivity(userName)
+                        val user = User()
+                        user.userName = userName
+                        saveUserAndStartMainActivity(user, view)
+                    } else {
+                        showErrorMessage(view)
+                        view.isEnabled = true
                     }
                 }
+    }
+
+    private fun saveUserAndStartMainActivity(user: User, view: View) {
+        
+
     }
 
 
