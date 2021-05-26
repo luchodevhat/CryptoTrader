@@ -13,7 +13,7 @@ class FireStoreService(val firebaseFirestore: FirebaseFirestore) {
     fun setDocument(data: Any, collectionName: String, id: String, callBack: CallBack<Void>) {
         firebaseFirestore.collection(collectionName).document(id).set(data)
             .addOnSuccessListener { callBack.onSuccess(null)}
-            .addOnFailureListener( ) // working here
+          //  .addOnFailureListener( ) // working here
 
     }
 
