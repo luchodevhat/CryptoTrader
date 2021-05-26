@@ -4,9 +4,10 @@
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha04.aar/63327c7ad1ab2dca6bebbc5e45f4ab98/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha04.aar/63327c7ad1ab2dca6bebbc5e45f4ab98/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha04.aar/63327c7ad1ab2dca6bebbc5e45f4ab98/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha04.aar/4e3168c08f23fafdb084d1dd3a6c87ee/res" />
       <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha04.aar/63327c7ad1ab2dca6bebbc5e45f4ab98/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha04.aar/63327c7ad1ab2dca6bebbc5e45f4ab98/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

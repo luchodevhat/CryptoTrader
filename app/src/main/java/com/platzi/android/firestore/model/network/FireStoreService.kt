@@ -1,7 +1,6 @@
 package com.platzi.android.firestore.model.network
 
-import android.widget.Toast
-import com.google.android.gms.tasks.Task
+
 import com.google.firebase.firestore.FirebaseFirestore
 import com.platzi.android.firestore.model.Crypto
 import com.platzi.android.firestore.model.User
